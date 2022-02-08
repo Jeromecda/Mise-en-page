@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mise en page - TP</title>
+    <title>Mise en page - float</title>
     <style>
+        /* Méthode DRY : don't repeat yourself */
+        .container {
+            width: 600px;
+            height: 200px;
+        }
+        /* cas type */
         .container div {
             width: 150px;
-            height: 75px;
+            height: 50px;
             float: left;
             text-align: center;
-        }  
+        }
+
         .violet{background-color: #9931cc;
             width: 300px !important;}
         .rouge{background-color: #fe0000;}
@@ -29,18 +36,29 @@
     </style>
 </head>
 <body>
+    <!-- comment dupliquer une ligne -->
+    <!-- alt + SHIFT + Fleche -->
+
+    <!-- comment déplacer une ligne -->
+    <!-- alt + Fleche -->
+
+   <!-- multi curseur --> 
+    <!-- Sélection + CTRL + D -->
+
+    <!-- .container -->
     <div class="container">
-        <div class="violet">test</div>
+
+        <div class="violet w300">test</div>
         <div class="rouge">a</div>
         <div class="gris">b</div>
-
-            <div class="orange ligne">1</div>
+    
+            <div class="orange h100 ligne">1</div>
             <div class="rose">2</div>
             <div class="blanc">3</div>
-            <div class="orange ligne"></div>
-            <div class="jaune">4</div>
+            <div class="orange h100 w300 ligne"></div>
+            <div class="jaune w300">4</div>
 
-        <div class="vert ligne">5</div>
+        <div class="vert ligne w600">5</div>
     </div>
     
 </body>
